@@ -1,0 +1,159 @@
+.companies-section {
+  position: relative;
+  padding-top: 50px;
+  overflow: hidden;
+  margin-bottom: -60px;
+  background-image: url(../../Images/map-bg.png);
+  /* clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%); */
+  background-color: #bebdbd8e;
+  height: 700px   ;
+  background-repeat: no-repeat;
+  background-position: center;   
+}
+.companies-logo-wrapper{
+    overflow: hidden;
+    z-index: 20;
+}
+
+.companies-logo-wrapper h2 {
+    margin-top: 50px;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 50px;
+  color: #333;
+}
+
+.companies-logo-wrapper h2 span {
+  color: #f39c36; 
+}
+
+.logo-group-container {
+    z-index: 20;
+  display: flex;
+  flex-direction: column; 
+  gap: 25px; 
+  padding: 10px 0 30px 0; 
+}
+
+
+.logo-row {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  gap: 50px; 
+}
+
+.logo-row img {
+  position: relative;
+  overflow:hidden;
+  z-index: 10;
+  max-width: 150px;
+  max-height: 80px;
+  object-fit: contain;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.logo-row img:hover {
+  transform: scale(1.1);
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background: #cccccc ;
+  opacity: 1;
+}
+    
+.swiper-pagination-bullet-active {
+  background: #f39c36 ;
+  width: 25px;
+  border-radius: 5px;
+}
+
+.load-container img {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+}
+
+@media (max-width: 1440px) {
+  .companies-section{
+    height: auto;
+  }
+  .logo-row {
+    gap: 30px;
+  }
+
+  .logo-row img {
+    max-width: 120px;
+  }
+   .load-container img {
+    height: 400px;
+    margin-top: -120px;
+    position: relative; 
+  }
+
+}
+
+@media (max-width: 1024px) {
+  .companies-section {
+    height: auto; 
+    padding: 60px 0;
+    background-size: cover;
+  }
+
+  .companies-logo-wrapper {
+    text-align: center;
+  }
+
+  .companies-logo-wrapper h2 {
+    font-size: 28px;
+    margin-top: 0;
+  }
+
+  .logo-row {
+    gap: 20px;
+    flex-wrap: wrap; 
+  }
+
+  .logo-row img {
+    max-height: 50px;
+    max-width: 100px;
+  }
+
+  .load-container {
+    margin-top: -500px;
+    display: flex;
+    justify-content: center;
+  }
+
+}
+@media (max-width: 768px) {
+  .companies-logo-wrapper h2 {
+    font-size: 30px;
+  }
+
+  .logo-group-container {
+    gap: 15px;
+    
+  }
+
+
+  .logo-row img {
+    max-height: 80px;
+    max-width: 100px;
+
+  }
+  .load-container img {
+    
+    display: none;
+  }
+ 
+ 
+  .swiper-pagination-bullet-active {
+    width: 18px;
+  }
+}

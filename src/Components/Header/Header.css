@@ -1,0 +1,130 @@
+
+.custom-navbar {
+    width: 100%;
+    padding: 15px 0;
+    background-color: rgba(255, 255, 255, 0.89);
+    transition: all 0.4s ease-in-out;
+    display: flex;
+    align-items: center;
+}
+.header-contact-info img {
+    margin: 5px;
+}
+
+.custom-navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-scrolled {
+    background-color: #ffffff !important;
+    padding: 8px 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-logo {
+    height: 100px;
+    width: auto;
+    transition: height 0.3s ease;
+}
+
+.navbar-scrolled .navbar-logo {
+    height: 55px;
+}
+
+.custom-navbar .nav-link {
+    color: #333 !important;
+    font-weight: 500;
+    font-size: 17px;
+    margin: 0 12px;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.custom-navbar .nav-link:hover, 
+.custom-navbar .nav-link.active {
+    color: #f39c36 !important;
+}
+
+@media (min-width: 992px) {
+    .nav-links-container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .custom-offcanvas {
+        width: 300px !important;
+    }
+
+    .navbar-logo {
+        height: 50px;
+    }
+
+    .nav-links-container {
+        align-items: flex-start;
+        text-align: left;
+        width: 100%;
+    }
+
+    .custom-navbar .nav-link {
+        font-size: 18px;
+        padding: 12px 20px !important;
+        margin: 0;
+        width: 100%;
+        border-bottom: 1px solid #eee;
+    }
+
+    .custom-navbar .nav-link.active {
+        background-color: #fff9f2; 
+    }
+
+    .header-contact-info {
+        margin-top: auto;
+        padding: 25px 20px;
+        background-color: #fcfcfc;
+        border-top: 1px solid #eee;
+        gap: 15px;
+        width: 100%;
+    }
+
+    .header-contact-info .contact-item {
+        margin-left: 0;
+        justify-content: flex-start;
+    }
+
+    .header-contact-info span {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-logo {
+        height: 45px;
+    }
+
+    .offcanvas-body {
+        padding: 1rem 0;
+    }
+
+    .header-contact-info span {
+        font-size: 13px;
+    }
+    
+    .navbar-toggler {
+        padding: 4px 8px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-height: 500px) and (max-width: 991px) {
+    .custom-offcanvas {
+        overflow-y: auto;
+    }
+    .header-contact-info {
+        margin-top: 20px;
+        position: static;
+    }
+}

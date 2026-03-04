@@ -1,0 +1,129 @@
+.form-sec {
+    background-color: #383986;
+    height: auto;
+    min-height: 800px;
+    position: relative;
+    z-index: 1;
+    background: linear-gradient(-3deg, #383986 80%, #bebdbd8e 80%);
+}
+
+.form-sec .cont-form {
+    height: auto;
+    background-color: #f39c36;
+    border-radius: 40px;
+    position: relative;
+    z-index: 10;
+    margin-top: 0;  
+    max-width: 1100px;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px;
+}
+
+
+.form-label {
+    color: white;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.btn-submit {
+   height: 50px;
+   width: 200px;
+   color: white;
+   background-color: #31358b !important; 
+   border-radius: 10px;
+}
+.btn-submit:hover {
+    background-color: #24276b !important;
+}
+
+.cont-form .form-control {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    color: white;
+    height: 45px;
+    border-radius: 10px;
+}
+
+.testimonial button {
+    background-color: #f39c36;
+}
+
+.testimonial h2 {
+    color: #f39c36;
+    text-align: start;
+}
+
+.testimonial h3 {
+    color: #f39c36;
+    text-align: center;
+}
+
+
+.testimonial  h6::after {
+    content: "";
+    height: 3px;
+    width: 86px;
+    position: absolute;
+    background-color: white;
+    margin-left: 5px;
+    margin-top: 12px;
+}
+
+.testimonial-card h3::before {
+    content: "";
+    height: 3px;
+    width: 86px;
+    position: absolute;
+    background-color: white;
+    margin-left: -95px;
+    margin-top: 15px;
+}
+
+.swiper-pagination-bullet {
+    background: white !important;
+}
+.swiper-pagination-bullet-active {
+    background: #f39c36 !important;
+}
+
+/* @media (max-width: 1440px) {
+}   
+
+@media (max-width: 1024px) {
+} */
+
+@media (max-width: 768px) {
+    .form-sec .cont-form {
+    height: auto;
+    background-color: #f39c36;
+    border-radius: 20px;
+    position: relative;
+    z-index: 10;
+    padding: 20px; 
+}
+.cont-form .form-text h2{
+    font-weight: 400 !important;
+}
+.testimonial-card{
+    padding-bottom: 20px;
+}
+ 
+}
+
+@media (max-width: 480px) {
+    .cont-form .form-text h2{
+    font-weight: 300 !important;
+
+}
+.testimonial-card{
+    margin-bottom: 25px;
+}
+.t-head h6{
+    margin-top: 20px;
+}
+
+}

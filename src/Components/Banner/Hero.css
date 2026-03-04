@@ -1,0 +1,171 @@
+.back-banner {
+    position: relative;
+    overflow: hidden; 
+    width: 100vw;
+    background-color: #fff;
+}
+.back-banner::after {
+    content: "";
+    background-color: #f39c36;  
+    position: absolute;
+    height: 520px;
+    width: 50%;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    right: 0;
+    bottom: 80px;
+    z-index: 1;
+}
+
+
+.banner {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+    display: flex;
+    align-items: center;
+}
+
+
+.banner h1 {
+    font-size: 4.5rem;
+    font-weight: 700;
+}
+
+.banner .lead {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.banner .btn {
+    height: 60px;
+    width: 250px;
+    background-color: #f39c36;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+    border: none;
+}
+
+.banner a.btn span {
+    font-size: 1.4rem;
+}
+
+.banner a.btn:hover {
+    background-color: #d8862a;
+}
+
+/* @media (max-width: 1680px) {
+     
+} */
+@media (max-width: 1440px) {
+     .banner h1 {
+        font-size: 3.5rem;
+    }
+    
+    .title {
+        max-width: 85%;
+    }
+
+    .back-banner::after {
+        height: 500px; 
+        bottom: 75px;
+    }
+     
+}   
+
+@media (max-width: 1024px) {
+    .banner h1 {
+        font-size: 3.5rem;
+    }
+    
+    .title {
+        max-width: 85%;
+    }
+
+    .back-banner::after {
+        height: 500px; 
+        bottom: 75px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .banner {
+        clip-path: polygon(0 0, 100% 0, 100% 92%, 0 100%);
+        background-position: 70% center; 
+    }
+    .banner::before {
+        content: "";
+        background: #0000009e;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        left: 0;
+        top: 0;
+        z-index: 2;
+    }
+    .title {
+        text-align: center;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 15px;
+        color: white;
+        z-index: 5;
+    }
+
+    .banner h1 {
+        font-size: 2.8rem;
+        line-height: 1.2;
+    }
+
+    .banner h1 br {
+        display: none; 
+    }
+
+    .banner .lead {
+        font-size: 1.1rem;
+        margin-top: 10px;
+    }
+
+    .back-banner::after {
+        height: 180px; 
+        bottom: 0px;
+    }
+
+    .banner .btn {
+        width: 220px;
+        height: 55px;
+        border-radius: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .banner h1 {
+        font-size: 2.2rem; 
+    }
+
+    .banner .lead {
+        font-size: 1rem;
+    }
+    
+
+    .banner a.btn span {
+        font-size: 1.1rem;
+    }
+    .back-banner::after {
+        height: 200px; 
+        width: 70%;
+        bottom: 0px;
+    }
+}
+

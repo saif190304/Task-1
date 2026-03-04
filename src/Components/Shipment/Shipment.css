@@ -1,0 +1,145 @@
+.shipment-section {
+    width: 100%;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.shipment-area {
+    background-color: #f39c36;
+    min-height: 450px;
+    width: 100%;
+    z-index: 2;
+    border-radius: 40px;
+    position: relative;
+    padding: 60px;
+}
+
+.transport-grid {
+    display: flex;
+    gap: 15px;
+}
+
+.transpotation {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 12px;
+    padding: 15px;
+    flex: 1;
+    max-width: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.transpotation span {
+    font-size: 14px;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+.transpotation img {
+    height: 40px;
+    width: auto;
+}
+
+.shipment-area h3 {
+    font-size: 38px;
+    line-height: 1.2;
+}
+
+.shipment-desc {
+    font-size: 17px;
+    opacity: 0.9;
+}
+
+@media (max-width: 2560px) {
+     .shipment-area {
+        padding: 40px 30px;
+        text-align: center;
+        min-height: auto;
+        width: 90%;
+    }
+    .blue-container {
+        position: absolute;
+        right: 0; 
+        top: -120px;
+        z-index: 5;
+    }
+
+    .blue-container img {
+        max-width: 150%; 
+    }
+}
+@media (max-width: 1440px) {
+     .shipment-area {
+        padding: 40px 30px;
+        text-align: center;
+        min-height: auto;
+        width: 90%;
+    }
+    .blue-container {
+        position: absolute;
+        right: 0; 
+        top: -70px;
+        z-index: 5;
+    }
+
+    .blue-container img {
+        max-width: 125%; 
+    }
+}
+
+@media (max-width: 1024px) {
+    .shipment-area {
+        padding: 40px 30px;
+        text-align: center;
+        min-height: auto;
+    }
+
+    .transport-grid {
+        justify-content: center;
+    }
+
+
+    .blue-container {
+        position: absolute;
+        right: 0; 
+        top: -70px;
+        z-index: 5;
+    }
+
+    .blue-container img {
+        max-width: 125%; 
+    }
+}
+
+@media (max-width: 768px) {
+    .shipment-area {
+        width: 100%;
+        padding: 30px 20px;
+        border-radius: 25px;
+    }
+
+    .shipment-area h3 {
+        font-size: 24px;
+    }
+
+    .transport-grid {
+        gap: 8px;
+    }
+
+    .transpotation {
+        padding: 10px 5px;
+    }
+
+    .transpotation span {
+        font-size: 11px;
+    }
+
+    .transpotation img {
+        height: 30px;
+    }
+    .blue-container img {
+        visibility: hidden;
+    }
+}

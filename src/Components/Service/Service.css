@@ -1,0 +1,140 @@
+
+  #servicegrid {
+     background: #f39c36
+ }
+
+ .shipping-services h2 {
+     text-align: center;
+     padding-top: 50px;
+     color: #ffffff;
+ }
+
+ .service-item {
+     position: relative;
+     width: 100%;
+     object-fit: cover;
+     overflow: hidden;
+     margin-bottom: 20px;
+     border-radius: 30px;
+ }
+
+ .service-item .overlay {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     display: flex;
+     justify-content: start;
+     align-items: end;
+     transition: background-color 0.4s ease;
+     z-index: 2;
+ }
+
+ .overlay-content h5 {
+     color: #ffffff;
+     font-size: 17px;
+     margin: 0;
+     width: 80%;
+     padding: 25px 25px;
+ }
+
+ #servicegrid .arrow-icon {
+     position: absolute;
+     bottom: 15px;
+     right: 15px;
+     padding: 0;
+ }
+
+ #servicegrid .arrow-icon img {
+     height: 40px;
+     width: 40px;
+ }
+
+ .service-item:hover .overlay {
+     opacity: 1;
+     background-color: #00000057;
+ }
+
+ .service-item img {
+     width: 100%;
+     display: block;
+     height: 300px;
+     border-radius: 30px;
+     object-fit: cover;
+     transition: transform 0.3s ease;
+ }
+
+ .service-item:hover img {
+     transform: scale(1.1);
+ }
+
+ @media (max-width: 1440px) {
+  .overlay-content h5 {
+    font-size: 15px;
+    padding: 20px;
+  }
+      
+}   
+
+@media (max-width: 1024px) {
+  .shipping-services h2 {
+    font-size: 28px;
+    padding-top: 30px;
+  }
+
+  .service-item img {
+    height: 250px; 
+  }
+
+ 
+  .service-item .overlay {
+    background-color: rgba(0, 0, 0, 0.4); 
+  }
+
+  .overlay-content h5 {
+    padding: 15px;
+  }
+    
+}
+
+@media (max-width: 768px) {
+  .shipping-services h2 {
+    font-size: 22px;
+  }
+
+  .service-item img {
+    border-radius: 20px; 
+  }
+
+  .service-item {
+    border-radius: 20px;
+  }
+
+  .overlay-content h5 {
+    font-size: 16px;
+    width: 75%;
+  }
+    
+}
+
+@media (max-width: 480px) {
+  .shipping-services h2 {
+    font-size: 22px;
+  }
+
+  .service-item img {
+    padding-left: 0;
+  }
+
+  .service-item {
+    border-radius: 20px; 
+  }
+
+  .overlay-content h5 {
+    font-size: 16px;
+    width: 75%;
+  }
+
+    
+}

@@ -1,0 +1,144 @@
+.about-plain {
+    overflow: visible;
+    width: 100%;
+    padding-top: 50px;
+}
+
+.about-sec h6 {
+    font-size: 25px;
+}
+
+.about-sec p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.about-sec button {
+    height: 60px;
+    width: 250px;
+    background-color: #f39c36;
+    border: none;
+    transition: transform 0.3s ease;
+}
+
+.about-sec button:hover {
+    transform: translateY(-3px);
+    background-color: #865720;
+}
+
+.about-sec button span {
+    font-size: 22px;
+}
+
+.plain-img img {
+    position: relative;
+    height: auto;
+    width: 100%;
+    margin-top: -150px;
+    z-index: 1;
+    display: block;
+}
+
+.cargo-services {
+    background-color: #e7e7e7ce;
+    width: 100%;
+}
+
+.col-services {
+    border-right: 3px solid white;
+    cursor: pointer;
+}
+
+.col-services:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.feature-icon img {
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+
+
+
+@media (max-width: 1440px) {
+    .plain-img img {
+        margin-top: -100px;
+    }
+
+    .about-sec h2 {
+        font-size: 2.8rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .plain-img img {
+        margin-top: -200px;
+    }
+
+    .about-sec h2 {
+        font-size: 2.8rem;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .plain-img img {
+        margin-top: -200px;
+    }
+
+    .about-sec h2 {
+        font-size: 40px;
+        margin-left: 25px;
+    }
+
+    .about-sec p {
+        font-size: px;
+        margin-left: 25px;
+    }
+
+    .about-sec h6 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .about-sec button {
+        margin: 20px;
+    }
+
+    .col-services {
+        border-bottom: 3px solid white;
+        border-right: none;
+        cursor: pointer;
+    }
+
+
+}
+
+@media (max-width: 480px) {
+    .about-sec h2 {
+        font-size: 1.8rem !important;
+    }
+
+    .plain-img img {
+        margin-top: -150px;
+    }
+
+    .about-sec button {
+        width: 100%;
+        max-width: 250px;
+        margin-left: 35px;
+    }
+
+    .feature-icon {
+        display: flex;
+        justify-content: center;
+    }
+    .feature-card h3{
+        display: flex;
+        justify-content: center;
+    }
+    .feature-card p{
+        font-size: 20px;
+    }
+}
