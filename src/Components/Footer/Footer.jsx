@@ -1,6 +1,6 @@
 import React from 'react'
 import './Footer.css'
-import logo from '../../Images/logo.png'
+import footerLogo from '../../Images/footer-logo.png'
 import call from '../../Images/call-i.png'
 import email from '../../Images/email.png'
 import location from '../../Images/pin.png'
@@ -11,18 +11,18 @@ function Footer() {
             <div className="container">
                 <div className='row text-white footer-item'>
 
-                    <div className="col">
-                        <img src={logo} alt="" />
+                    <div className="col-lg-2 col-md-2 col-sm-12 footer-img">
+                        <img src={footerLogo} alt="" />
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut vel maxime inventore velit, <br />explicabo iste
                             similique cum delectus accusantium. Aliquam?</p>
                     </div>
-                    <div className="col foot-contact">
+                    <div className="col-lg-2 col-md-2 col-sm-12 foot-contact">
                         <h4>Contact us</h4>
                         <p><img src={call} alt="" />+910000000000</p>
                         <p><img src={email} alt="" />info@vision.com</p>
                         <p><img src={location} alt="" />Flat no. , Street no. , City,Country, Pincode</p>
                     </div>
-                    <div className="col quick-l">
+                    <div className="col-lg-2 col-md-2 col-sm-12 quick-l">
                         <h4>Quick Links</h4>
                         <ul>
                             <li><a href="#about">About Us</a></li>
@@ -30,7 +30,7 @@ function Footer() {
                             <li><a href="#contact">Contact</a></li>
                         </ul>
                     </div>
-                    <div className="col service-link">
+                    <div className="col-lg-2 col-md-2 col-sm-12 service-link">
                         <h4>Services</h4>
                         <ul>
                             <li><a href="#">Freight Forwarding Ocean & Air</a></li>

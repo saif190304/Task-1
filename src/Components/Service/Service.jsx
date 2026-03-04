@@ -16,7 +16,7 @@ function Service() {
                     <h2>Shipping & Logistics Services</h2>
                     <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 py-4">
                         <div className="col" >
-                            <div className="service-item">
+                            <div className="service-item" data-aos="flip-left" data-aos-duration="3000">
                                 <img src={layer1} alt="layer-1" className='img-fluid' />
                                 <div className="overlay">
                                     <div className="overlay-content">
@@ -29,7 +29,7 @@ function Service() {
                             </div>
                         </div>
                         <div className="col">
-                            <div className="service-item">
+                            <div className="service-item" data-aos="flip-left" data-aos-duration="3000">
                                 <img src={layer2} alt="layer-2" className='img-fluid' />
                                 <div className="overlay">
                                     <div className="overlay-content">
@@ -42,7 +42,7 @@ function Service() {
                             </div>
                         </div>
                         <div className="col" >
-                            <div className="service-item">
+                            <div className="service-item" data-aos="flip-left" data-aos-duration="3000">
                                 <img src={layer3} alt="layer-3" className='img-fluid' />
                                 <div className="overlay">
                                     <div className="overlay-content">
@@ -55,7 +55,7 @@ function Service() {
                             </div>
                         </div>
                         <div className="col">
-                            <div className="service-item">
+                            <div className="service-item" data-aos="flip-left" data-aos-duration="3000">
                                 <img src={layer4} alt="layer-1" className='img-fluid' />
                                 <div className="overlay">
                                     <div className="overlay-content">
@@ -68,7 +68,7 @@ function Service() {
                             </div>
                         </div>
                         <div className="col">
-                            <div className="service-item">
+                            <div className="service-item" data-aos="flip-left" data-aos-duration="3000">
                                 <img src={layer5} alt="layer-1" className='img-fluid' />
                                 <div className="overlay">
                                     <div className="overlay-content">
@@ -81,7 +81,7 @@ function Service() {
                             </div>
                         </div>
                         <div className="col" >
-                            <div className="service-item">
+                            <div className="service-item" data-aos="flip-left" data-aos-duration="3000">
                                 <img src={layer6} alt="layer-1" className='img-fluid' />
                                 <div className="overlay">
                                     <div className="overlay-content">

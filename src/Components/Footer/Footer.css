@@ -4,6 +4,11 @@
     background-position: center;
     padding: 50px 0;
 }
+.footer-img img{
+    height: 100px;
+    width: auto;
+    margin-bottom: 10px;
+}
 
 .foot-contact p {
     display: flex;
@@ -37,9 +42,15 @@
 
 .footer-items {
     margin: auto;
+    justify-content:space-around
+}
+.row.text-white.footer-item {
     justify-content: space-between;
 }
 
+.foot-contact h4, .quick-l h4, .service-link h4{
+    font-weight: 700;
+} 
 
 .copyright a {
     text-decoration: none;

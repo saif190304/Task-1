@@ -10,7 +10,7 @@ function Testimonial() {
     return (
         <div className="form-sec" id="contact">
             <div className="container-fluid">
-                <form className="cont-form">
+                <form className="cont-form" data-aos="zoom-in" data-aos-duration="2000">
                     <div className="row align-items-center">
                         <div className="col-lg-8">
                             <div className="row">
